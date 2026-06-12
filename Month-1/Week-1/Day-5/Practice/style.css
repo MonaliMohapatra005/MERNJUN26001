@@ -1,0 +1,95 @@
+ h2 {
+    color: rgb(28, 99, 160);
+}
+
+
+/* #para {
+    background-color: aqua;
+}
+
+.newpara {
+    background-color: blueviolet;
+}  */
+
+
+#para, .newpara {
+    background-color: hsl(0, 39%, 59%);
+}
+
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.parent p{
+    background-color: bisque;
+}
+
+.parent>p{
+    color: blue;
+}
+
+.parent+div {
+    color: cornflowerblue;
+}
+
+
+.parent ~div {
+    font-size: x-large;
+}
+
+
+/* pseudo-class-selector 
+   hover
+   active
+   focus
+   nth-child
+   first-child
+   last-child
+*/
+
+section {
+    width: 100px;
+    height: 50px;
+    background-color: #6e5cb8;
+}
+
+section:hover {
+    background-color: #12063f;
+}
+
+section:active {
+    background-color: orangered;
+}
+
+input:focus{
+    background-color: rgb(78, 171, 171);
+}
+
+li:first-child{
+    color: rgb(250, 119, 11);
+}
+li:last-child{
+    color: rgb(9, 130, 37);
+}
+li:nth-child(3){
+    color: crimson;
+}
+
+
+
+ /* box model */
+
+ * {
+    box-sizing: border-box;
+ }
+
+ .box{
+    height: 150px;
+    width: 150px;
+    border: black solid ;
+    background-color: #a06666;
+    padding: 10px 20px 20px 30px;
+    margin: 50px 100px;
+ }
