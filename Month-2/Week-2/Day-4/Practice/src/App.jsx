@@ -6,17 +6,21 @@ import { Routes, Route } from "react-router";
 import AdminDash from './AdminDash';
 import Proile from './Proile';
 import Admin from './Admin';
+import Navbar from './Navbar';
+
+
 function App() {
 
   return (
     <>
+    <Navbar />
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/register' element={<Resister />}/>
       <Route path='*' element={<>not found</>} />
       <Route path='/admin' element={<Admin />} >
       <Route index element={<AdminDash />} />
-      <Route path='profile' element={<Proile/>} />
+      <Route path='profile/:id' element={<Proile/>} />
 
       </Route>
 
